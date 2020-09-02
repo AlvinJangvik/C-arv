@@ -14,10 +14,22 @@ namespace baseobject
             int höjd = int.Parse(Console.ReadLine());
             Console.WriteLine("Skriv in bredd");
             int bredd = int.Parse(Console.ReadLine());
+            Console.WriteLine("Triangel(1) eller Rektangel(2)?");
+            int val = int.Parse(Console.ReadLine());
 
-            Triangle tri = new Triangle(bredd, höjd);
-            Console.WriteLine("Omkrets: ", tri.Circumferance());
-            Console.WriteLine("Area: ", tri.Area());
+            Shape shape;
+
+            if(val == 1)
+            {
+                shape = new Triangle(bredd, höjd);
+            }
+            else if (val == 2)
+            {
+                shape = new Rectangle(bredd, höjd);
+            }
+
+            Console.WriteLine("Area: " + shape.Area());
+            Console.WriteLine("Omkrets: " + shape.Circumference());
         }
 
     }

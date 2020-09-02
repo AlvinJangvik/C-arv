@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace baseobject
 {
-    class Triangle : Shape
+    class Rectangle : Shape
     {
-        public Triangle(int width, int height) : base(width, height)
+        public Rectangle(int width, int height) : base(width, height)
         {
         }
         public override int Area()
         {
-            int area = (width * height) / 2;
+            int area = width * height;
             return area;
         }
 
         public override int Circumference()
         {
-            int Circ = width + height*2;
+            int Circ = width + height;
             return Circ;
         }
     }

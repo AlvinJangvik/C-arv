@@ -27,5 +27,15 @@ namespace baseobject
             set { height = value; }
         }
 
+        public virtual int Area()
+        {
+            return 0;
+        }
+
+        public virtual int Circumference()
+        {
+            return 0;
+        }
+
     }
 }
