@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace baseobject
 {
-    class Triangle : Shape
+    class Triangle : IShape
     {
-        public Triangle(int width, int height) : base(width, height)
+        private int width;
+        private int height;
+        public Triangle(int w, int h)
         {
+            width = w;
+            height = h;
         }
-        public override int Area()
+        public int Area()
         {
-            int area = (width * height) / 2;
+            int area = width * height;
             return area;
         }
 
-        public override int Circumference()
+        public int Circumference()
         {
             int Circ = width + height*2;
             return Circ;

@@ -17,7 +17,7 @@ namespace baseobject
             Console.WriteLine("Triangel(1) eller Rektangel(2)?");
             int val = int.Parse(Console.ReadLine());
 
-            Shape shape;
+            IShape shape = new IShape();
 
             if(val == 1)
             {
