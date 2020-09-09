@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace baseobject
 {
-    class Rectangle : IShape
+    class Rectangle
     {
         private int width;
         private int height;

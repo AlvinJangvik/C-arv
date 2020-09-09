@@ -17,7 +17,7 @@ namespace baseobject
             Console.WriteLine("Triangel(1) eller Rektangel(2)?");
             int val = int.Parse(Console.ReadLine());
 
-            IShape shape = new IShape();
+            IShape shape = new Rectangle(0,0);
 
             if(val == 1)
             {
@@ -27,7 +27,7 @@ namespace baseobject
             {
                 shape = new Rectangle(bredd, höjd);
             }
-
+            
             Console.WriteLine("Area: " + shape.Area());
             Console.WriteLine("Omkrets: " + shape.Circumference());
         }
